@@ -1,0 +1,72 @@
+body {
+    background: rgb(68, 67, 67);
+}
+
+.calculator {
+    width: 250px;
+    margin: 50px auto;
+    border: 2px solid black;
+    text-align: center;
+    background-image: url("RainbowCode.jpg");
+    background-size: cover;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#display {
+    width: 80%;
+    padding: 5px;
+    margin: 5px auto;
+    border: 2px darkgray ridge;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    background: tan;
+}
+
+h4 { 
+    color: white;
+    margin-right: 15px;
+    text-shadow: 1px 1px 2px orangered;
+}
+
+.buttons button {
+    border: 2px black solid;
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    margin: 5px;
+    font-size: 20px;
+    outline: none;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+}
+
+.clear{
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+}
+
+#clear {
+    background: rgb(163, 0, 0);
+    color: white;
+}
+
+#operator{
+    background-color: blue;
+    color: white;
+}
+
+.buttons button:hover {
+    transition: all .2s ease-in-out;
+    transform: scale(1.2rem);
+    background-color: darkslategray;
+    box-shadow: 3px 4px 5px rgb(47, 255, 82);
+}
+
+@keyframes fall {
+    0% { transform: translateY(-100vh); }
+    100% { transform: translateY(100vh); }
+  }
